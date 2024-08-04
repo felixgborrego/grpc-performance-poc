@@ -1,4 +1,4 @@
-```markdown
+markdown
 # gRPC Performance Comparison: Go vs Rust
 
 This Pet project compare the performance of gRPC implementations in Go and Rust (using Tonic). 
