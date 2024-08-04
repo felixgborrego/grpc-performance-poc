@@ -89,7 +89,7 @@ Status code distribution:
   [OK]   1000000 responses   
 ```
 
-* Note: results on a Apple M3 Max with 53 total Memory usage and 200% cpu usage.
+* Note: results on a Apple M3 Max with 53Mb total Memory usage and 200% cpu usage.
 
 
 # Rust results
@@ -131,7 +131,7 @@ Status code distribution:
   [OK]   1000000 responses   
 
 ```
-* Note: results on a Apple M3 Max with 53 total Memory usage and 160% cpu usage.
+* Note: results on a Apple M3 Max with 53Mb total Memory usage and 160% cpu usage.
 
 ## Result Overview
 
