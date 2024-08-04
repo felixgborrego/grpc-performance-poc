@@ -137,4 +137,9 @@ Status code distribution:
 
 In my small quest to compare gRPC performance between Go and Rust, I found that both languages deliver impressive results, with Go edging out Rust with slightly better performance metrics!
 
-I believe that with some optimizations, Rust, being a non-GC language, could potentially outperform Go. However, given the impressive performance numbers we've seen and all the other aspects to consider when building a new service, there are only a few cases where Rust would make a significant difference. In my personal opinion, the added complexity of Rust isn't necessary if you're looking for a high-performance gRPC service.
+I believe that with some optimizations, Rust, being a non-GC language, could potentially outperform Go. 
+
+However, given the impressive performance numbers we've seen and all the other aspects to consider when building a new service, there are only a few cases where Rust would make a significant difference. 
+
+In my personal opinion, the added complexity of Rust isn't necessary if you're looking for a high-performance gRPC service. All things considered, it's mind-blowing how effortlessly you can write massive concurrent applications nowadays!
+
