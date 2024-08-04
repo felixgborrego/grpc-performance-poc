@@ -7,6 +7,7 @@ By running performance tests, we can analyze and understand the efficiency and s
 > [!NOTE]  
 > I don't want to start a language war. My goal is simply to improve my understanding to make better decisions in terms of technology.
 
+![img](docs/results.png)
 
 ## Requirements
 
@@ -92,8 +93,6 @@ Status code distribution:
 * Note: results on a Apple M3 Max with 53 total Memory usage and 200% cpu usage.
 
 
-Full report at [Go Reports](results/go_result.html)
-
 # Rust results
 
 ```
@@ -134,8 +133,6 @@ Status code distribution:
 
 ```
 * Note: results on a Apple M3 Max with 53 total Memory usage and 160% cpu usage.
-
-Full report at [Rust Reports](results/rust_result.html)
 
 ## Result Overview
 
