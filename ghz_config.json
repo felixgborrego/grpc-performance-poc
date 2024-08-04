@@ -1,0 +1,21 @@
+{
+    "proto": "proto/model.proto",
+    "call": "model.EntityService.CreateEntity",
+    "call": "model.EntityService.CreateAttribute",
+    "call": "model.EntityService.AddAttributeToEntity",
+    "data": {
+      "name": "Benchmark Attribute"
+    },
+    "data": {
+      "name": "Benchmark Entity"
+    },
+    "data": {
+      "entityId": 1,
+      "attributeIds": [1, 2, 3, 4, 5]
+    },
+    "n": 10000,
+    "concurrency": 50,
+    "host": "localhost:50051",
+    "insecure": true
+  }
+  

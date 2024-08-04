@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option go_package = "internal/generated/model";
+
+
+package model;
+
+service EntityService {
+    rpc CreateEntity(CreateEntityRequest) returns (CreateEntityResponse);
+    rpc CreateAttribute(CreateAttributeRequest) returns (CreateAttributeResponse);
+    rpc AddAttributeToEntity(AddAttributeToEntityRequest) returns (AddAttributeToEntityResponse);
+}
+
+message CreateEntityRequest {
+    string name = 1;
+}
+
+message CreateEntityResponse {
+    uint64 entityId = 1;
+}
+
+message CreateAttributeRequest {
+    string name = 1;
+}
+
+message CreateAttributeResponse {
+    uint64 attributeId = 1;
+}
+
+message AddAttributeToEntityRequest {
+    uint64 entityId = 1;
+    repeated uint64 attributeIds = 2;
+}
+
+message AddAttributeToEntityResponse {
+}
