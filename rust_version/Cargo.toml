@@ -1,0 +1,28 @@
+[package]
+name = "rust-version-poc"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tonic = "0.12.1"
+prost = "0.13"
+tokio = { version = "1", features = ["full"] }
+tiny-tokio-actor = "0.3.5"
+log = "0.4"
+env_logger = "0.11.5"
+sonyflake = "0.2"
+
+
+[build-dependencies]
+tonic-build =  {version="0.12.1" , features = ["prost"]  }
+
+[dev-dependencies]
+criterion = "0.5.1"
+
+[[bin]]
+name = "rust_server"
+path = "src/load_balancer/main.rs"
+
+[[bin]]
+name = "client"
+path = "src/client/main.rs"

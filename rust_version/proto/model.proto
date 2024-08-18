@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package model;
+
+service EntityService {
+    rpc CreateEntity(CreateEntityRequest) returns (CreateEntityResponse);
+    rpc CreateAttribute(CreateAttributeRequest) returns (CreateAttributeResponse);
+    rpc AddAttributeToEntity(AddAttributeToEntityRequest) returns (AddAttributeToEntityResponse);
+}
+
+message CreateEntityRequest {
+    // Fields for creating an entity
+     string name = 1;
+}
+
+message CreateEntityResponse {
+    // Fields for response
+    uint64 entityId = 1;
+}
+
+message CreateAttributeRequest {
+    // Fields for creating an attribute
+    string name = 1;
+}
+
+message CreateAttributeResponse {
+    // Fields for response
+    uint64 attributeId = 1;
+}
+
+message AddAttributeToEntityRequest {
+    // Fields for adding attribute to entity
+    uint64 entityId = 1;
+    repeated uint64 attributeIds = 2;
+}
+
+message AddAttributeToEntityResponse {
+    // Fields for response
+}
